@@ -45,6 +45,7 @@ const events =[ {
   title: "This is a workshop connected to a ticket",
   date: "Jun 1st, 2034 at 10:00 AM (IST)",
   icon: "https://dev-media.konfhub.com/speakers/2024/June/09/1717977337424-66d3d266-64c3-4c45-a4ec-f9288d96dbc8.jpg",
+
 }]
 
 const tickets = [
@@ -124,7 +125,7 @@ const useTabsData = (eventData: any): TabData => {
         key: 'about',
         component: (
           <>
-          <h2>ABOUT EVENT</h2>
+          <h1>ABOUT EVENT</h1>
           <div dangerouslySetInnerHTML={{ __html: description }} className='description-container'/>
           </>
         ),
@@ -133,7 +134,7 @@ const useTabsData = (eventData: any): TabData => {
         key: 'tickets',
         component: (
           <>
-            <h2>TICKETS</h2>
+            <h1>TICKETS</h1>
             <div className="ticket-cards-container">
             {tickets.map((ticket, index) => (
               <TicketCard key={index} ticket={ticket} />
@@ -147,7 +148,7 @@ const useTabsData = (eventData: any): TabData => {
         key: 'speakers',
         component: (
           <>
-            <h2>THIS IS SPEAKERS SECTION</h2>
+            <h1>THIS IS SPEAKERS SECTION</h1>
             <div dangerouslySetInnerHTML={{ __html: speaker_section_description }} className='description-container'/>
             <div className="speaker-cards-container">
               {speakers.map((speaker, index) => (
@@ -161,7 +162,7 @@ const useTabsData = (eventData: any): TabData => {
         key: 'sponsors',
         component: (
           <>
-            <h2>THIS IS SPONSORS SECTION</h2>
+            <h1>THIS IS SPONSORS SECTION</h1>
             <div dangerouslySetInnerHTML={{ __html: sponsor_section_description }} className='description-container'/>
             <div className="speaker-cards-container">
             {events.map((speaker, index) => (
@@ -175,7 +176,7 @@ const useTabsData = (eventData: any): TabData => {
         key: 'workshops',
         component: (
           <>
-            <h2>THIS IS WORKSHOP SECTION</h2>
+            <h1>THIS IS WORKSHOP SECTION</h1>
             <div dangerouslySetInnerHTML={{ __html: workshop_section_description }} className='description-container'/>
             <div className="workshop-img-container">
             <img src='https://dev.konfhub.com/_next/image?url=https%3A%2F%2Fdev-media.konfhub.com%2Fsponsors%2F2024%2FJune%2F09%2F1717977584480-2a58c92e-ac5f-4ebd-9570-d6bcfc792dc2.png&w=3840&q=75' width={"100%"}/>
@@ -188,9 +189,10 @@ const useTabsData = (eventData: any): TabData => {
         key: 'sponsors',
         component: (
           <>
-            <h2>SPONSOR CATEGORY</h2>
-            <div>
+            <h1>SPONSOR CATEGORY</h1>
+            <div >
             <img src='https://dev-media.konfhub.com/sponsors/2024/June/10/1717977635909-75bb1d01-51a2-4af1-82cd-72d587192692.jpg' width={"100%"} className="sponsor-img-container"/>
+
             </div>
           </>
         ),

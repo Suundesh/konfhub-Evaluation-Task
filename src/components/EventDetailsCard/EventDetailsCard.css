@@ -1,0 +1,59 @@
+.event-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.event-type {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.event-type-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.event-live-link {
+  margin-bottom: 10px;
+}
+
+.event-link {
+  font-weight: bold;
+}
+
+.event-live-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.event-date-container {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.event-date {
+font-weight: bold;
+margin-top: 1rem;
+font-size: 16px;
+}
+
+.event-date span {
+  font-weight: bold;
+}
+
+.event-countdown {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.countdown-timer {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
